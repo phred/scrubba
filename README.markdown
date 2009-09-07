@@ -25,3 +25,11 @@ Dropping a single HTML file onto `Scrubba.exe` will make a new file in the same 
 Directories
 ===
 Dropping a folder full of HTML files onto Scrubba will make a new folder in the same place as the original folder with `_scrubbed` at the end of the name, and then go through all of the HTML files in that folder and clean them.  So if you have a folder named `mysite` and drop that on Scrubba, there will be a new folder named `mysite_scrubbed` in the same place as `mysite`.  HTML files in the new folder will have the same names as the ones in `mysite`, but they will be scrubbed to work with IE8.
+
+Building
+---
+Scrubba is a straightforward distutils-enabled project.  `Scrubba.zip` was made using `py2exe` with Python 2.6 on Windows Vista.  To make a new executable, run:
+
+    % python setup.py py2exe
+
+Per usual, the intermediate files are in `build` and the executable is in `dist`.
